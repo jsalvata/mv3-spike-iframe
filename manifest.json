@@ -1,0 +1,23 @@
+{
+  "name": "ViewLoader",
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Simulates loading an iframe with dynamic content",
+  "permissions": [],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": ["src/gmail.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/assets/internal.html"],
+      "matches": ["*://mail.google.com/*"]
+    }
+  ]
+}
