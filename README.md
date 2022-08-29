@@ -14,6 +14,10 @@ This project kickstarts a server on `http://localhost:8080` to serve as an exter
 
 > npm start
 
+You also need to run the build at least one time:
+
+> npm run build
+
 Then, you can "Load unpacked" the root folder as a Chrome Extension.
 
 To test the MV2, rename the `manifest-v2.json` to `manifest.json`.
