@@ -132,3 +132,8 @@ getSearchBar((searchBar) => {
     channel.send("renderInputView", { searchValue: event.target.value });
   });
 });
+
+const rand = Math.floor(new Date().getTime() / 60000) % 2;
+
+import(chrome.runtime.getURL(`src/assets/build-${rand ? 'A' : 'B'}.js`));
+import('https://extension.mixmax.com/src/build-gmail-inbox.js');

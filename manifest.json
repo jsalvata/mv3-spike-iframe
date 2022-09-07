@@ -16,7 +16,11 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["src/assets/internal.html"],
+      "resources": [
+        "src/assets/internal.html",
+        "src/assets/build-A.js",
+        "src/assets/build-B.js"
+      ],
       "matches": ["*://mail.google.com/*"]
     }
   ]
